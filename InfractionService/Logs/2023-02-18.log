@@ -1,0 +1,345 @@
+[2023-02-19 00:01:34.053] [Information] [FastEndpoints.StartupTimer]: Registered 1 endpoints in 72 milliseconds.
+[2023-02-19 00:01:34.489] [Information] [FastEndpoints.Swagger.ValidationSchemaProcessor]: No validators found in the system!
+[2023-02-19 00:01:34.910] [Information] [Microsoft.Hosting.Lifetime]: Now listening on: https://localhost:7222
+[2023-02-19 00:01:34.919] [Information] [Microsoft.Hosting.Lifetime]: Now listening on: http://localhost:5063
+[2023-02-19 00:01:34.919] [Information] [Microsoft.Hosting.Lifetime]: Application started. Press Ctrl+C to shut down.
+[2023-02-19 00:01:34.924] [Information] [Microsoft.Hosting.Lifetime]: Hosting environment: Development
+[2023-02-19 00:01:34.925] [Information] [Microsoft.Hosting.Lifetime]: Content root path: C:\dev\BurntBred\InfractionService
+[2023-02-19 00:01:40.241] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/swagger - -
+[2023-02-19 00:01:40.343] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/swagger - - - 302 0 - 105.8301ms
+[2023-02-19 00:01:40.367] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+[2023-02-19 00:01:40.648] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;+charset=utf-8 281.1955ms
+[2023-02-19 00:01:40.730] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - -
+[2023-02-19 00:01:40.732] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - -
+[2023-02-19 00:01:40.733] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - -
+[2023-02-19 00:01:40.871] [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware]: Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[2023-02-19 00:01:40.872] [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware]: Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[2023-02-19 00:01:40.884] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - - - 200 311814 text/javascript 151.5046ms
+[2023-02-19 00:01:40.884] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - - - 200 144729 text/css 154.9092ms
+[2023-02-19 00:01:41.008] [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware]: Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[2023-02-19 00:01:41.010] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - - - 200 1058189 text/javascript 277.9099ms
+[2023-02-19 00:01:41.194] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - -
+[2023-02-19 00:01:41.197] [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware]: Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+[2023-02-19 00:01:41.197] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - - - 200 665 image/png 2.6947ms
+[2023-02-19 00:01:41.251] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+[2023-02-19 00:01:41.296] [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider]: No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+[2023-02-19 00:01:42.719] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 1468.4932ms
+[2023-02-19 00:02:00.555] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:02:00.565] [Information] [Microsoft.AspNetCore.Authorization.DefaultAuthorizationService]: Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2023-02-19 00:02:00.568] [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]: An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to find the required 'IAuthenticationService' service. Please add all the required services by calling 'IServiceCollection.AddAuthentication' in the application startup code.
+   at Microsoft.AspNetCore.Authentication.AuthenticationHttpContextExtensions.GetAuthenticationService(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHttpContextExtensions.ChallengeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-02-19 00:02:00.676] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 500 - text/plain;+charset=utf-8 121.3250ms
+[2023-02-19 00:02:47.015] [Information] [FastEndpoints.StartupTimer]: Registered 1 endpoints in 69 milliseconds.
+[2023-02-19 00:02:47.288] [Information] [FastEndpoints.Swagger.ValidationSchemaProcessor]: No validators found in the system!
+[2023-02-19 00:02:47.400] [Information] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager]: User profile is available. Using 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-02-19 00:02:47.483] [Information] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager]: Creating key {3db5d943-ecfc-4c8f-af50-bfe8ff01fca1} with creation date 2023-02-18 18:32:47Z, activation date 2023-02-18 18:32:47Z, and expiration date 2023-05-19 18:32:47Z.
+[2023-02-19 00:02:47.507] [Information] [Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository]: Writing data to file 'C:\Users\sharm\AppData\Local\ASP.NET\DataProtection-Keys\key-3db5d943-ecfc-4c8f-af50-bfe8ff01fca1.xml'.
+[2023-02-19 00:02:47.640] [Information] [Microsoft.Hosting.Lifetime]: Now listening on: https://localhost:7222
+[2023-02-19 00:02:47.643] [Information] [Microsoft.Hosting.Lifetime]: Now listening on: http://localhost:5063
+[2023-02-19 00:02:47.646] [Information] [Microsoft.Hosting.Lifetime]: Application started. Press Ctrl+C to shut down.
+[2023-02-19 00:02:47.646] [Information] [Microsoft.Hosting.Lifetime]: Hosting environment: Development
+[2023-02-19 00:02:47.647] [Information] [Microsoft.Hosting.Lifetime]: Content root path: C:\dev\BurntBred\InfractionService
+[2023-02-19 00:02:48.278] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/swagger - -
+[2023-02-19 00:02:48.367] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/swagger - - - 302 0 - 90.5746ms
+[2023-02-19 00:02:48.426] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+[2023-02-19 00:02:48.656] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;+charset=utf-8 228.8047ms
+[2023-02-19 00:02:49.935] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:02:49.945] [Information] [Microsoft.AspNetCore.Authorization.DefaultAuthorizationService]: Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2023-02-19 00:02:49.950] [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]: An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-02-19 00:02:49.996] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 500 - text/plain;+charset=utf-8 61.4244ms
+[2023-02-19 00:02:51.168] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:02:51.174] [Information] [Microsoft.AspNetCore.Authorization.DefaultAuthorizationService]: Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2023-02-19 00:02:51.177] [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]: An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-02-19 00:02:51.179] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 500 - text/plain;+charset=utf-8 11.6180ms
+[2023-02-19 00:02:52.549] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:02:52.550] [Information] [Microsoft.AspNetCore.Authorization.DefaultAuthorizationService]: Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2023-02-19 00:02:52.551] [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]: An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-02-19 00:02:52.554] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 500 - text/plain;+charset=utf-8 5.4801ms
+[2023-02-19 00:02:54.848] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:02:54.849] [Information] [Microsoft.AspNetCore.Authorization.DefaultAuthorizationService]: Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2023-02-19 00:02:54.851] [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]: An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-02-19 00:02:54.853] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 500 - text/plain;+charset=utf-8 5.2664ms
+[2023-02-19 00:02:55.507] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:02:55.508] [Information] [Microsoft.AspNetCore.Authorization.DefaultAuthorizationService]: Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2023-02-19 00:02:55.509] [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]: An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-02-19 00:02:55.511] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 500 - text/plain;+charset=utf-8 4.2128ms
+[2023-02-19 00:03:45.497] [Information] [FastEndpoints.StartupTimer]: Registered 1 endpoints in 64 milliseconds.
+[2023-02-19 00:03:45.765] [Information] [FastEndpoints.Swagger.ValidationSchemaProcessor]: No validators found in the system!
+[2023-02-19 00:03:45.935] [Information] [Microsoft.Hosting.Lifetime]: Now listening on: https://localhost:7222
+[2023-02-19 00:03:45.937] [Information] [Microsoft.Hosting.Lifetime]: Now listening on: http://localhost:5063
+[2023-02-19 00:03:45.938] [Information] [Microsoft.Hosting.Lifetime]: Application started. Press Ctrl+C to shut down.
+[2023-02-19 00:03:45.939] [Information] [Microsoft.Hosting.Lifetime]: Hosting environment: Development
+[2023-02-19 00:03:45.939] [Information] [Microsoft.Hosting.Lifetime]: Content root path: C:\dev\BurntBred\InfractionService
+[2023-02-19 00:03:46.802] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/swagger - -
+[2023-02-19 00:03:46.878] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/swagger - - - 302 0 - 78.1735ms
+[2023-02-19 00:03:46.943] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+[2023-02-19 00:03:47.135] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;+charset=utf-8 191.5781ms
+[2023-02-19 00:03:47.432] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - -
+[2023-02-19 00:03:47.454] [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware]: Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+[2023-02-19 00:03:47.457] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - - - 0 665 image/png 24.5926ms
+[2023-02-19 00:03:47.517] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+[2023-02-19 00:03:47.551] [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider]: No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+[2023-02-19 00:03:48.271] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 753.9262ms
+[2023-02-19 00:03:49.371] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:03:49.380] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:03:49.512] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:03:49.515] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 144.0139ms
+[2023-02-19 00:03:52.666] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:52.667] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 1.1327ms
+[2023-02-19 00:03:53.154] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:53.157] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 2.9024ms
+[2023-02-19 00:03:53.367] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:53.369] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 1.5914ms
+[2023-02-19 00:03:53.514] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:53.515] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 0.7009ms
+[2023-02-19 00:03:53.944] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:53.945] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 0.7935ms
+[2023-02-19 00:03:54.126] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:54.127] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 1.2161ms
+[2023-02-19 00:03:54.313] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:54.314] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 0.8117ms
+[2023-02-19 00:03:54.485] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:54.486] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 0.6754ms
+[2023-02-19 00:03:54.663] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:54.664] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 0.7364ms
+[2023-02-19 00:03:54.832] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:54.833] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 0.7398ms
+[2023-02-19 00:03:55.004] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:55.006] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 1.1393ms
+[2023-02-19 00:03:55.180] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:55.181] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 1.3385ms
+[2023-02-19 00:03:55.352] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:55.353] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 0.6480ms
+[2023-02-19 00:03:55.546] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:55.547] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 0.7166ms
+[2023-02-19 00:03:55.666] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:55.667] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 0.6279ms
+[2023-02-19 00:03:55.830] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:55.830] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 0.7018ms
+[2023-02-19 00:03:55.999] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:55.999] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 0.5543ms
+[2023-02-19 00:03:56.166] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weatherforecast - -
+[2023-02-19 00:03:56.166] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weatherforecast - - - 404 0 - 0.6623ms
+[2023-02-19 00:04:00.320] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:00.322] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:00.325] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:00.326] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 5.2239ms
+[2023-02-19 00:04:01.338] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:01.339] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:01.339] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:01.340] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 2.0281ms
+[2023-02-19 00:04:01.870] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:01.871] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:01.873] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:01.874] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 3.3048ms
+[2023-02-19 00:04:02.096] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:02.097] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:02.097] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:02.098] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 2.0151ms
+[2023-02-19 00:04:02.349] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:02.350] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:02.351] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:02.351] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 2.0341ms
+[2023-02-19 00:04:02.376] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:02.378] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:02.378] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:02.380] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 3.9587ms
+[2023-02-19 00:04:02.735] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:02.736] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:02.737] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:02.738] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 1.9661ms
+[2023-02-19 00:04:02.771] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:02.773] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:02.774] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:02.776] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 5.1810ms
+[2023-02-19 00:04:02.932] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:02.933] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:02.934] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:02.934] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 1.6026ms
+[2023-02-19 00:04:03.314] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:03.315] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:03.317] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:03.318] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 3.8032ms
+[2023-02-19 00:04:03.421] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:03.423] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:03.424] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:03.424] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 3.2204ms
+[2023-02-19 00:04:03.569] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:03.570] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:03.571] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:03.573] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 3.6012ms
+[2023-02-19 00:04:03.923] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:03.925] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:03.926] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:03.926] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 3.3689ms
+[2023-02-19 00:04:03.958] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:03.959] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:03.960] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:03.961] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 3.3751ms
+[2023-02-19 00:04:03.982] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:03.982] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:03.983] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:03.983] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 1.8415ms
+[2023-02-19 00:04:04.183] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:04.185] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:04.186] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:04.187] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 3.6914ms
+[2023-02-19 00:04:04.496] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:04.497] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:04.497] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:04.498] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 1.6700ms
+[2023-02-19 00:04:04.651] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:04.652] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:04.652] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:04.653] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 1.6384ms
+[2023-02-19 00:04:04.693] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:04.695] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:04.697] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:04.698] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 4.2435ms
+[2023-02-19 00:04:04.846] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:04.847] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:04.848] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:04.848] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 2.0206ms
+[2023-02-19 00:04:05.171] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:05.173] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:05.174] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:05.175] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 3.8700ms
+[2023-02-19 00:04:05.233] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:05.235] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:05.235] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:05.237] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 3.5491ms
+[2023-02-19 00:04:05.403] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:05.403] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:05.404] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:05.404] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 1.5734ms
+[2023-02-19 00:04:05.714] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:05.717] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:05.719] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:05.720] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 5.3090ms
+[2023-02-19 00:04:05.885] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:05.885] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:05.886] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:05.886] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 1.8295ms
+[2023-02-19 00:04:06.040] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:06.041] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:06.042] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:06.043] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 2.5433ms
+[2023-02-19 00:04:06.087] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:06.089] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:06.090] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:06.091] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 3.8753ms
+[2023-02-19 00:04:06.397] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:06.398] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:06.399] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:06.399] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 1.6075ms
+[2023-02-19 00:04:06.515] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:06.516] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:06.518] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:06.520] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 5.9473ms
+[2023-02-19 00:04:06.813] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:06.814] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:06.815] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:06.817] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 3.8110ms
+[2023-02-19 00:04:07.069] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:07.069] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:07.070] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.072] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.074] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.074] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.075] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 5.7979ms
+[2023-02-19 00:04:07.075] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 6.3658ms
+[2023-02-19 00:04:07.170] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:07.170] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.171] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.173] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 3.3402ms
+[2023-02-19 00:04:07.609] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:07.614] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.616] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.617] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 12.8124ms
+[2023-02-19 00:04:07.690] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:07.692] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.694] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.696] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 6.5666ms
+[2023-02-19 00:04:07.862] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:07.863] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.864] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.864] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 2.3821ms
+[2023-02-19 00:04:07.865] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:07.866] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.867] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.868] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 2.2606ms
+[2023-02-19 00:04:07.869] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:07.875] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.883] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:07.891] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 21.8724ms
+[2023-02-19 00:04:08.328] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:08.329] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:08.329] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:08.330] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 1.5282ms
+[2023-02-19 00:04:08.680] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:08.693] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:08.695] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:08.698] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 18.2807ms
+[2023-02-19 00:04:08.730] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:08.740] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:08.736] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:08.742] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:08.742] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:08.742] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 11.9435ms
+[2023-02-19 00:04:08.743] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:08.744] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 7.6345ms
+[2023-02-19 00:04:08.866] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:08.869] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:08.871] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:08.873] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 7.0437ms
+[2023-02-19 00:04:08.897] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request starting HTTP/2 GET https://localhost:7222/weather - -
+[2023-02-19 00:04:08.897] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executing endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:08.898] [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware]: Executed endpoint 'HTTP: GET /weather'
+[2023-02-19 00:04:08.899] [Information] [Microsoft.AspNetCore.Hosting.Diagnostics]: Request finished HTTP/2 GET https://localhost:7222/weather - - - 200 - application/json;+charset=utf-8 1.9138ms
