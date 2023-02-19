@@ -1,6 +1,8 @@
 using FastEndpoints;
 using FastEndpoints.Swagger;
 using InfractionService.Exceptions;
+using Remora.Discord.Rest;
+using Remora.Discord.Rest.Extensions;
 using Serilog;
 using Serilog.Templates;
 using Serilog.Templates.Themes;
@@ -17,8 +19,10 @@ builder.Configuration
 
 builder.Host.UseSerilog((b, configuration) =>
 {
-    var consoleLogFormat = b.Configuration["Logging:Formats:Console"] ?? throw new EmptyLogFormatException("No format string was specified for console logging");
-    var fileLogFormat = b.Configuration["Logging:Formats:File"] ?? throw new EmptyLogFormatException("No format string was specified for file logging");
+    var consoleLogFormat = b.Configuration["Logging:Formats:Console"] ??
+                           throw new InvalidConfigException("No format string was specified for console logging");
+    var fileLogFormat = b.Configuration["Logging:Formats:File"] ??
+                        throw new InvalidConfigException("No format string was specified for file logging");
     configuration
 #if DEBUG
         .MinimumLevel.Information()
@@ -46,6 +50,12 @@ builder.Host.UseSerilog((b, configuration) =>
 
 builder.Services.AddFastEndpoints();
 builder.Services.AddSwaggerDoc();
+builder.Services.AddDiscordRest(_ =>
+    (
+        builder.Configuration["Discord:Token"] ?? throw new InvalidConfigException("Bot token not specified"),
+        DiscordTokenType.Bot
+    )
+);
 
 var app = builder.Build();
 
@@ -56,5 +66,6 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwaggerGen();
 }
+
 app.UseHttpsRedirection();
 app.Run();

@@ -10,6 +10,7 @@
     <PackageReference Include="FastEndpoints" Version="5.7.2" />
     <PackageReference Include="FastEndpoints.Swagger" Version="5.7.2" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.0" />
+    <PackageReference Include="Remora.Discord" Version="2023.1.0" />
     <PackageReference Include="Serilog.AspNetCore" Version="6.1.1-dev-00295" />
     <PackageReference Include="Serilog.Expressions" Version="3.4.2-dev-00119" />
     <PackageReference Include="Serilog.Sinks.Console" Version="4.1.1-dev-00907" />
